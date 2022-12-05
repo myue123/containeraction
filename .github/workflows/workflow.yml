@@ -14,4 +14,4 @@ jobs:
     - name: output
       run: |
         echo ${{ steps.hellp.outputs.memory }}
-        echo total memory successfully output"
+        echo "total memory successfully output"
