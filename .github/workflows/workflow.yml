@@ -7,11 +7,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: run the action
-      id: hellp
+      id: hello
       uses: ./
       with:
         myInput: 'Test Y.'
     - name: output
       run: |
-        echo ${{ steps.hellp.outputs.memory }}
+        echo ${{ steps.hello.outputs.memory }}
         echo "total memory successfully output"
