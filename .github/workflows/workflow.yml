@@ -5,13 +5,13 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - uses: actions/checkout@v2
-      - name: run the action
-        id: hellp
-        uses: ./
-        with:
-          myInput: 'Test Y.'
-      -name: output
-        run: |
-          echo ${{ steps.hellp.outputs.memory }}
-          echo total memory successfully output"
+    - uses: actions/checkout@v2
+    - name: run the action
+      id: hellp
+      uses: ./
+      with:
+        myInput: 'Test Y.'
+    - name: output
+      run: |
+        echo ${{ steps.hellp.outputs.memory }}
+        echo total memory successfully output"
